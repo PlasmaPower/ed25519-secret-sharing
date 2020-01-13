@@ -1,0 +1,15 @@
+[package]
+name = "ed25519-secret-sharing"
+version = "0.1.0"
+authors = ["Lee Bousfield <ljbousfield@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+curve25519-dalek = "2.0.0"
+rand = "0.7.2"
+
+[features]
+wasm = []
